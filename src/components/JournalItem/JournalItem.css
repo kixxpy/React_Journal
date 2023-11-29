@@ -1,11 +1,12 @@
 .journal-item {
 	border-radius: 3px;
 	background: rgba(255, 255, 255, 0.03);
-	color: #FFF;
-	padding: 20px;
+	color: #fff;
+	padding: 10px 20px;
 }
 
 .journal-item__header {
+	margin: 0;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 600;
@@ -13,7 +14,8 @@
 }
 
 .journal-item__date {
-	color: rgba(255, 255, 255, 0.40);
+	margin: 0;
+	color: rgba(255, 255, 255, 0.4);
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
@@ -21,15 +23,18 @@
 }
 
 .journal-item__text {
-	color: rgba(255, 255, 255, 0.60);
+	padding: 0;
+	color: rgba(255, 255, 255, 0.6);
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
 	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .journal-item__body {
 	display: flex;
+	align-items: center;
 	gap: 10px;
 }
