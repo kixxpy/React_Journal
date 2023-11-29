@@ -18,7 +18,7 @@ function JournalList({ items, setItem }) {
 		.filter(el => el.userId === userId)
 		.sort(sortItems), [items, userId]);
 
-	if (items.length === 0) {
+	if (items.length - 1 === 0) {
 		return <p>Записей пока нет, добавьте первую</p>;
 	}
 	
